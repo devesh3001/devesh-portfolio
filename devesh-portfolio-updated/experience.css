@@ -1,0 +1,202 @@
+/* Recruiter navigation and project demonstrations extend the original layout. */
+.hero { grid-template-columns: minmax(0, 1.5fr) minmax(310px, 1fr); gap: 68px; padding-block: 74px; }
+h1 { font-size: clamp(48px, 5.8vw, 78px); }
+.hero-role { font-size: 21px; font-weight: 650; line-height: 1.4; }
+.hero-academic { margin-top: 9px; font-size: 13px; color: var(--muted); }
+.hero-intro { font-size: 17px; line-height: 1.8; }
+.hero-recognition { font-size: 12px; margin-top: 24px; padding-left: 13px; border-left-width: 3px; }
+.hero-recognition strong { font-size: 14px; }
+.recognition-link { font-size: 12px; }
+.hero-leadership { display: flex; gap: 10px; align-items: baseline; margin-top: 14px; font-size: 13px; }
+.leadership-mark { color: var(--accent); }
+.hero-leadership a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.hero-buttons { margin-top: 26px; }
+.brief-link { display: inline-flex; align-items: center; gap: 10px; margin-top: 19px; min-height: 38px; font-size: 13px; }
+.project-preview { border-left: 1px solid var(--line); padding-left: 32px; min-width: 0; }
+.preview-topline { display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+.preview-topline h2 { font-size: 13px; letter-spacing: .03em; font-weight: 600; }
+.preview-topline .mono { font-weight: 400; letter-spacing: .025em; color: var(--muted); font-size: 11px; }
+.preview-tabs { display: flex; gap: 6px; margin-top: 20px; border-bottom: 1px solid var(--line); }
+.preview-tabs button { padding: 10px 9px; font-size: 12px; color: var(--muted); border-bottom: 2px solid transparent; min-height: 42px; }
+.preview-tabs button:first-child { padding-left: 0; }
+.preview-tabs button.active { color: var(--accent); border-color: var(--accent); font-weight: 650; }
+.preview-tabs button:hover { color: var(--accent); }
+#spotlight-content { min-height: 357px; }
+.preview-context { font-size: 12px; color: var(--muted); margin-top: 20px; }
+#spotlight-content > h3 { margin-top: 9px; font-size: 27px; letter-spacing: -.03em; }
+.component-strip { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 7px; margin-top: 22px; }
+.component-strip > div { background: var(--surface); border-top: 2px solid var(--accent); padding: 10px 10px 12px; min-width: 0; }
+.component-index { display: block; font-size: 10px; color: var(--muted); margin-bottom: 9px; }
+.component-strip strong { display: block; font-size: 12px; font-weight: 600; line-height: 1.3; }
+.component-strip small { display: block; font-size: 11px; color: var(--muted); margin-top: 6px; line-height: 1.5; overflow-wrap: anywhere; }
+.preview-metrics { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; padding-block: 21px; border-bottom: 1px solid var(--line); }
+.preview-metrics strong { display: block; font-size: 28px; line-height: 1.25; font-weight: 650; color: var(--accent); letter-spacing: -.03em; }
+.preview-metrics span { display: block; font-size: 11px; color: var(--muted); margin-top: 5px; line-height: 1.6; }
+.preview-decision { margin-top: 19px; }
+.preview-decision > span { font-size: 10px; letter-spacing: .08em; font-weight: 600; color: var(--muted); }
+.preview-decision p { margin-top: 7px; font-size: 13px; line-height: 1.75; color: var(--ink); }
+.preview-actions { display: flex; flex-wrap: wrap; gap: 9px 20px; margin-top: 15px; }
+.preview-actions .text-link { min-height: 40px; font-size: 12px; }
+.hero-identity { display: flex; align-items: center; gap: 25px; }
+.hero-identity h1 { min-width: 0; }
+.portrait { margin: 0; flex: 0 0 auto; width: 130px; }
+.portrait img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 28%; border-radius: 5px; }
+.profile-portrait { display: block; width: 56px; height: 70px; object-fit: cover; border-radius: 4px; flex: 0 0 auto; }
+.education-history { margin-top: 19px; padding-top: 15px; border-top: 1px solid var(--line); font-size: 12px; line-height: 1.75; color: var(--muted); }
+.education-history > span { display: block; margin-bottom: 4px; font-size: 11px; }
+.section-header { margin-bottom: 27px; }
+.section-header h2 { font-size: clamp(30px, 3.2vw, 40px); }
+.section-intro { font-size: 15px; }
+.work-guide { margin-bottom: 22px; font-size: 13px; color: var(--muted); }
+.work-toolbar { padding-bottom: 20px; }
+.filter { font-size: 13px; padding: 10px 12px; min-height: 43px; }
+.project-card { padding-block: 39px; }
+.project-heading h3 { font-size: 30px; }
+.project-context { font-size: 13px; }
+.project-category { font-size: 12px; }
+.project-tags span { font-size: 11px; }
+.project-award { font-size: 13px; }
+.project-features { font-size: 14px; line-height: 1.75; margin-top: 18px; }
+.project-features li { margin-top: 6px; }
+.project-metrics { background: var(--surface); gap: 20px 30px; padding: 16px 20px; margin-top: 24px; }
+.project-metric strong { font-size: 25px; color: var(--accent); }
+.project-metric span { font-size: 12px; margin-top: 4px; }
+.case-button, .project-links a { font-size: 13px; padding-block: 8px; }
+.project-bottom { margin-top: 17px; }
+.lab-tabs { gap: 24px; }
+.lab-tab { min-height: 44px; }
+.lab-tab span { font-size: 14px; }
+.lab-controls > p { font-size: 14px; }
+.lab-kicker { font-size: 10px; }
+.range-field label { font-size: 13px; }
+.range-ends { font-size: 11px; }
+input[type="range"] { min-height: 31px; }
+.reset-button { font-size: 13px; padding-block: 8px; }
+.scenario-presets { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 20px; }
+.scenario-presets button { font-size: 11px; min-height: 36px; padding: 6px 9px; border: 1px solid var(--line); border-radius: 3px; color: var(--accent); }
+.scenario-presets button:hover { border-color: var(--accent); background: var(--accent-soft); }
+.chart-title h4 { font-size: 14px; }
+.chart-legend { font-size: 11px; }
+.lab-metrics > div > span { font-size: 12px; }
+.lab-metrics strong { font-size: 28px; }
+.allocation-labels { font-size: 12px; }
+.scenario-explanation, .lab-footnote { font-size: 13px; line-height: 1.8; }
+.anomaly-explanation { font-size: 13px; }
+.anomaly-explanation strong { font-size: 14px; }
+.anomaly-result > span { font-size: 12px; }
+.inventory-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px 18px; margin-top: 24px; margin-bottom: 25px; }
+.inventory-actions .reset-button { margin: 0; }
+.inventory-summary { display: flex; align-items: baseline; gap: 13px; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+.inventory-summary > strong { font-size: 44px; color: var(--accent); line-height: 1.1; letter-spacing: -.035em; font-weight: 650; }
+.inventory-summary > span { font-size: 13px; color: var(--muted); }
+.inventory-summary .inventory-rule { margin-left: auto; font-size: 11px; }
+.inventory-batch { margin-top: 22px; }
+.batch-topline { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; font-size: 13px; }
+.batch-topline > span { color: var(--muted); font-size: 11px; }
+.batch-topline > b { margin-left: auto; font-weight: 600; }
+.batch-meter { background: var(--surface); height: 9px; margin-top: 10px; overflow: hidden; border: 1px solid var(--line); border-radius: 2px; }
+.batch-meter > span { display: block; height: 100%; background: var(--accent); transition: width .25s ease; }
+.inventory-batch > small { display: block; color: var(--muted); margin-top: 5px; font-size: 10px; }
+.inventory-batch.depleted .batch-topline { color: var(--muted); }
+.inventory-status { margin-top: 26px; background: var(--accent-soft); border-left: 3px solid var(--accent); padding: 13px 16px; font-size: 13px; line-height: 1.7; min-height: 66px; }
+.inventory-status[data-state="rejected"] { border-left-color: var(--flag); }
+.inventory-log { margin-top: 17px; }
+.inventory-log p { font-size: 12px; color: var(--muted); padding-top: 10px; margin-top: 10px; border-top: 1px solid var(--line); }
+.inventory-log p > span { display: block; color: var(--ink); font-weight: 600; margin-bottom: 3px; }
+.about-copy > p:not(.eyebrow) { font-size: 16px; }
+.achievement-list strong { font-size: 14px; }
+.achievement-list small, .achievement-proof { font-size: 12px; }
+.beyond-code strong { font-size: 14px; }
+.beyond-code p { font-size: 12px; }
+.skill-chips span, .skill-note { font-size: 12px; }
+.profile-summary { font-size: 13px; }
+.profile-contact { font-size: 12px; }
+.profile-evidence strong { font-size: 15px; }
+.profile-evidence p { font-size: 13px; }
+.brief-evidence > div { display: flex; gap: 18px; }
+.brief-number { font-size: 12px; font-weight: 600; color: var(--accent); padding-top: 2px; }
+.brief-evidence .text-link { font-size: 12px; margin-top: 5px; }
+.brief-more { line-height: 1.8; }
+.brief-more .text-link { font-size: 12px; }
+.case-section p, .case-section li { font-size: 14px; }
+.case-content .component-strip { margin-block: 24px; }
+.case-content .component-strip strong { font-size: 14px; }
+.case-content .component-strip small { font-size: 12px; }
+.case-result-grid strong { font-size: 28px; color: var(--accent); }
+.case-result-grid span { font-size: 12px; }
+@media (max-width: 1020px) {
+  .hero { gap: 36px; grid-template-columns: minmax(0, 1.4fr) minmax(295px, 1fr); }
+  .project-preview { padding-left: 24px; }
+  .preview-tabs button { font-size: 11px; padding-inline: 7px; }
+  .portrait { width: 105px; }
+  .hero-identity { gap: 18px; }
+  .hero-identity h1 { font-size: clamp(38px, 5.2vw, 53px); }
+  .lab-tabs { gap: 20px; }
+  .demo-tag { display: none; }
+}
+@media (max-width: 740px) {
+  .hero { grid-template-columns: 1fr; padding-block: 48px 50px; gap: 35px; }
+  h1 { font-size: clamp(48px, 10vw, 68px); }
+  .hero-role { font-size: 20px; margin-top: 22px; }
+  .hero-intro { font-size: 16px; }
+  .hero-academic { font-size: 12px; }
+  .hero-recognition { font-size: 12px; gap: 3px 11px; }
+  .hero-recognition strong { font-size: 13px; }
+  .hero-leadership { font-size: 12px; }
+  .project-preview { padding: 25px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .preview-tabs button { font-size: 13px; padding-inline: 12px; }
+  #spotlight-content { min-height: 330px; }
+  #spotlight-content > h3 { font-size: 28px; }
+  .component-strip { gap: 8px; }
+  .component-strip > div { padding: 12px; }
+  .component-strip strong { font-size: 13px; }
+  .component-strip small { font-size: 12px; }
+  .preview-metrics { padding-block: 19px; }
+  .preview-metrics span { font-size: 12px; }
+  .project-card { padding-block: 30px; }
+  .project-heading h3 { font-size: 28px; }
+  .project-description { font-size: 15px; }
+  .project-features { font-size: 14px; }
+  .project-metric strong { font-size: 25px; }
+  .project-metric span { font-size: 12px; }
+  .project-bottom { gap: 12px 20px; }
+  .lab-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+  .lab-tab { padding: 10px 0 14px; font-size: 10px; text-align: left; min-height: 74px; }
+  .lab-tab span { display: block; font-size: 12px; margin: 5px 0 0; line-height: 1.5; }
+  .lab-metrics strong { font-size: 24px; }
+  .lab-metrics > div > span { font-size: 11px; }
+  .scenario-explanation, .lab-footnote { font-size: 12px; }
+  .inventory-summary > strong { font-size: 39px; }
+  .inventory-summary .inventory-rule { display: none; }
+  .batch-topline { gap: 5px 10px; }
+  .batch-topline > span { font-size: 10px; }
+  .about-copy > p:not(.eyebrow) { font-size: 15px; }
+  .case-result-grid strong { font-size: 24px; }
+  .case-result-grid span { font-size: 11px; }
+  .portrait { width: 105px; }
+  .hero-identity h1 { font-size: clamp(42px, 7vw, 60px); }
+}
+@media (max-width: 420px) {
+  .hero-identity { gap: 15px; }
+  .hero-identity h1 { font-size: 34px; }
+  .portrait { width: 80px; }
+  .component-strip > div { padding: 10px 8px; }
+  .component-strip strong { font-size: 12px; }
+  .component-strip small { font-size: 11px; }
+  .preview-tabs button { font-size: 12px; padding-inline: 10px; }
+  .project-metrics { padding: 14px; gap: 16px; }
+  .project-metric { min-width: 95px; }
+  .batch-topline > span { flex-basis: 100%; order: 3; }
+  .case-result-grid { grid-template-columns: 1fr; gap: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .batch-meter > span { transition: none; }
+}
+@media print {
+  .project-preview, .brief-link, .work-guide, .scenario-presets { display: none !important; }
+  .hero-identity { gap: 20px; }
+  .hero-identity h1 { font-size: 32pt; }
+  .portrait { width: 80px; }
+  .brief-evidence .text-link, .brief-more .text-link { display: none; }
+  .component-strip > div, .project-metrics { background: white; }
+}
